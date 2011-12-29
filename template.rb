@@ -43,6 +43,7 @@ group :development, :test do
 end
 RUBY
 rvm_run 'bundle install'
+rvm_run 'bundle show'
 
 display "Install RSpec, Cucumber and RailsAdmin"
 generate 'rspec:install'
