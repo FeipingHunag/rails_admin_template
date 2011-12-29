@@ -20,7 +20,7 @@ A [Rails Template](http://m.onkey.org/rails-templates) to setup Rails applicatio
 
 ## Usage
 
-`rails new appname -d mysql -m https://raw.github.com/pinglamb/rails_admin_template/master/template.rb --skip-bundle`
+`rails new appname -d mysql -m https://raw.github.com/FeipingHunag/rails_admin_template/master/template.rb --skip-bundle`
 
 ## TODO
 
