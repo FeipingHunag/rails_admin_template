@@ -28,7 +28,7 @@ display "Using #{@rvm}"
 display "Include RSpec, Cucumber, FactoryGirl and RailsAdmin in Gemfile"
 append_to_file 'Gemfile', <<-RUBY
 
-gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git', :ref => '9664bcfbff25'
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 gem 'devise'
 
 group :development, :test do
