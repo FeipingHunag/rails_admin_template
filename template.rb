@@ -22,7 +22,7 @@ run "rvm #{rvm_ruby} gemset create #{rvm_gemset}"
 run "rvm use #{@rvm}"
 create_file ".rvmrc", "rvm use #{@rvm}"
 run "rvm rvmrc trust"
-rvm_run "gem install bundler"
+rvm_run "gem install bundler --version=1.0.18"
 display "Using #{@rvm}"
 
 display "Include RSpec, Cucumber, FactoryGirl and RailsAdmin in Gemfile"
