@@ -25,16 +25,13 @@ run "rvm rvmrc trust"
 rvm_run "gem install bundler --version=1.0.18"
 display "Using #{@rvm}"
 
-display "Include RSpec, Cucumber, FactoryGirl and RailsAdmin in Gemfile"
+display "Include  RailsAdmin in Gemfile"
 append_to_file 'Gemfile', <<-RUBY
 
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 gem 'devise'
 
 group :development, :test do
-  gem 'rspec-rails'
-  gem 'cucumber-rails'
-  gem 'factory_girl_rails'
   gem 'ruby-debug19'
   gem 'capybara'
   gem 'database_cleaner'
@@ -46,8 +43,6 @@ rvm_run 'bundle install'
 rvm_run 'bundle show'
 
 display "Install RSpec, Cucumber and RailsAdmin"
-generate 'rspec:install'
-generate 'cucumber:install'
 generate 'rails_admin:install administrator admin'
 
 display "Setup Devise"
